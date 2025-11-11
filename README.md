@@ -18,6 +18,8 @@ Motor y Lenguajes
 yaml
 Motor: Godot 4.2.1
 Lenguaje Principal: GDScript
-Plataformas Objetivo: Windows, Linux, macOS
+Plataformas Objetivo: Movil
 Renderizado: Compatible con OpenGL y Vulkan
+
+
 
