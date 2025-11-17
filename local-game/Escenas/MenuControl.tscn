@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://c47dmabs3nl31"]
+
+[ext_resource type="Texture2D" uid="uid://c4tjmjlgvm6ym" path="res://Assets/Fondos/EL GUARDIAN DE LAS BRUMAS.png" id="1_au3cx"]
+[ext_resource type="Script" uid="uid://do1ysi4ea7p0v" path="res://ScriptsProgram/menu_control.gd" id="1_kcajf"]
+[ext_resource type="FontFile" uid="uid://cqeo1qrygh0ao" path="res://Tipografia/dogicabold.otf" id="2_xb4xh"]
+[ext_resource type="AudioStream" uid="uid://cphksvyveua0t" path="res://Musica/Mechanical.mp3" id="6_rk7jj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kcajf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 653.0
+offset_bottom = 381.0
+texture = ExtResource("1_au3cx")
+expand_mode = 1
+
+[node name="Iniciar" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 470.0
+offset_top = 207.0
+offset_right = 602.0
+offset_bottom = 242.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.9022766, 0.91725326, 0, 1)
+theme_override_colors/font_hover_color = Color(0.41610458, 0.55650353, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_xb4xh")
+theme_override_font_sizes/font_size = 13
+text = "INICIAR"
+flat = true
+
+[node name="Salir" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 490.0
+offset_top = 245.0
+offset_right = 580.0
+offset_bottom = 280.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.9022766, 0.91725326, 0, 1)
+theme_override_colors/font_hover_color = Color(0.41610458, 0.55650353, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_xb4xh")
+theme_override_font_sizes/font_size = 13
+text = "SALIR"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_rk7jj")
+volume_db = -25.0
+
+[connection signal="pressed" from="Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

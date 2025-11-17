@@ -1,0 +1,111 @@
+[gd_scene load_steps=7 format=3 uid="uid://xjifrqtq28cw"]
+
+[ext_resource type="Texture2D" uid="uid://ddl1x8bfed68c" path="res://Assets/Fondos/Norma2D na X.jpeg" id="1_131cl"]
+[ext_resource type="Script" uid="uid://cn0xgeeo7yaox" path="res://Escenas/profile_scene.gd" id="1_e0cwq"]
+[ext_resource type="Texture2D" uid="uid://c4k4j1cguw5mn" path="res://Assets/Personaje/frente.png" id="2_m38w5"]
+[ext_resource type="FontFile" uid="uid://cqeo1qrygh0ao" path="res://Tipografia/dogicabold.otf" id="3_btjy5"]
+[ext_resource type="Texture2D" uid="uid://bgp67t8a5r2au" path="res://Assets/NpcPersonajes/imagenperfil.jpeg" id="4_m38w5"]
+[ext_resource type="Texture2D" uid="uid://bucc8ddpykm2y" path="res://Assets/iconos/Wrench2.png" id="5_btjy5"]
+
+[node name="ProfileScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e0cwq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 641.0
+offset_bottom = 362.0
+texture = ExtResource("1_131cl")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 235.0
+offset_top = 101.0
+offset_right = 416.0
+offset_bottom = 282.0
+texture = ExtResource("2_m38w5")
+expand_mode = 1
+
+[node name="mapa" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 215.0
+offset_top = 299.0
+offset_right = 315.0
+offset_bottom = 330.0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_btjy5")
+theme_override_font_sizes/font_size = 12
+text = "Mapa"
+
+[node name="Avatar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 296.0
+offset_right = 560.0
+offset_bottom = 330.0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_btjy5")
+theme_override_font_sizes/font_size = 12
+text = " Avatar "
+
+[node name="Armas" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 105.0
+offset_top = 298.0
+offset_right = 200.0
+offset_bottom = 330.0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_btjy5")
+theme_override_font_sizes/font_size = 12
+text = "Armas"
+
+[node name="Guardar" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 332.0
+offset_top = 296.0
+offset_right = 434.0
+offset_bottom = 331.0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_btjy5")
+theme_override_font_sizes/font_size = 12
+text = "Guardar"
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 25.0
+offset_top = 14.0
+offset_right = 65.0
+offset_bottom = 54.0
+texture = ExtResource("4_m38w5")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="TextureRect3"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 53.0
+offset_top = 15.0
+offset_right = 101.0
+offset_bottom = 30.0
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_btjy5")
+theme_override_font_sizes/font_size = 12
+text = "Rube"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(583, 39)
+scale = Vector2(2.453126, 2.453126)
+texture = ExtResource("5_btjy5")

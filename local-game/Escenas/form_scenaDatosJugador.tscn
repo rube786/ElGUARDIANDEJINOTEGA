@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6xxw0w3hg8wd"]
+
+[ext_resource type="Texture2D" uid="uid://d1b0s7p4mwe84" path="res://Assets/Fondos/FondoNpc.jpeg" id="1_fdx1m"]
+[ext_resource type="Script" uid="uid://g3may46w6jeo" path="res://ScriptsProgram/form_scena_datos_jugador.gd" id="1_shpic"]
+[ext_resource type="FontFile" uid="uid://bpffclolkhnil" path="res://Tipografia/dogicapixelbold.otf" id="2_shpic"]
+[ext_resource type="FontFile" uid="uid://cqeo1qrygh0ao" path="res://Tipografia/dogicabold.otf" id="3_h6pin"]
+
+[node name="FormScena" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 637.0
+offset_bottom = 358.0
+script = ExtResource("1_shpic")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
+texture_filter = 1
+layout_mode = 0
+offset_right = 639.0
+offset_bottom = 358.0
+texture = ExtResource("1_fdx1m")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 166.0
+offset_top = 108.0
+offset_right = 494.0
+offset_bottom = 298.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_shpic")
+theme_override_font_sizes/font_size = 14
+text = "Datos del Jugador"
+
+[node name="LineEdit_Nombre" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_h6pin")
+theme_override_font_sizes/font_size = 18
+placeholder_text = "Nombre"
+
+[node name="LineEdit_Edad" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_shpic")
+theme_override_font_sizes/font_size = 18
+placeholder_text = "Edad"
+
+[node name="LineEdit_ciudad" type="LineEdit" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_h6pin")
+theme_override_font_sizes/font_size = 18
+placeholder_text = "Ciudad"
+
+[node name="Continuar" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.9475091, 0.94807667, 1.540184e-06, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_h6pin")
+theme_override_font_sizes/font_size = 15
+text = "Continuar"

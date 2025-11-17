@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://d38q5f082otny"]
+
+[ext_resource type="Texture2D" uid="uid://cp5todyxk4d61" path="res://Assets/Controles/dpad_element_north.png" id="1_7mqcr"]
+[ext_resource type="Texture2D" uid="uid://bt62j6dhqsq61" path="res://Assets/Controles/dpad_element_south.png" id="2_xwboh"]
+[ext_resource type="Texture2D" uid="uid://bpwcsru7w64ua" path="res://Assets/Controles/dpad_element_east.png" id="3_unkrn"]
+[ext_resource type="Texture2D" uid="uid://b6483utebxkcd" path="res://Assets/Controles/dpad_element_west.png" id="4_0x41x"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="abajo" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(71, 321)
+scale = Vector2(0.171875, 0.171875)
+texture_normal = ExtResource("1_7mqcr")
+action = "ui_down"
+
+[node name="Arriba" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(71, 279)
+scale = Vector2(0.171875, 0.171875)
+texture_normal = ExtResource("2_xwboh")
+action = "ui_up"
+
+[node name="izquierda" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(46, 301)
+scale = Vector2(0.1640625, 0.1640625)
+texture_normal = ExtResource("3_unkrn")
+action = "ui_left"
+
+[node name="derecha" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(96, 301)
+scale = Vector2(0.16406256, 0.16406256)
+texture_normal = ExtResource("4_0x41x")
+action = "ui_right"

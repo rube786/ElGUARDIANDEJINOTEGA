@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfwn6fkl4jg0i"]
+
+[ext_resource type="Script" uid="uid://djb23rkda8oc0" path="res://ScriptsProgram/posterpixel.gd" id="1_lux8p"]
+[ext_resource type="Texture2D" uid="uid://db8khdxmve4r3" path="res://Objetos/poster.png" id="2_e6ns1"]
+[ext_resource type="FontFile" uid="uid://bpffclolkhnil" path="res://Tipografia/dogicapixelbold.otf" id="3_87smf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j2uvd"]
+radius = 9.0
+height = 32.0
+
+[node name="Poster" type="Area2D"]
+script = ExtResource("1_lux8p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(56, 41)
+shape = SubResource("CapsuleShape2D_j2uvd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(56, 41)
+texture = ExtResource("2_e6ns1")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 43.0
+offset_top = 27.0
+offset_right = 199.0
+offset_bottom = 50.0
+scale = Vector2(0.2239397, 0.3647968)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_87smf")
+theme_override_font_sizes/font_size = 10
+text = "Casa de juana"
