@@ -22,7 +22,11 @@ Plataformas Objetivo: Movil
 Renderizado: Compatible con OpenGL y Vulkan
 
 🎨 Descargar 
-1. En la carpeta 
-
+ 1. Ingresar en el siguiente link: https://drive.google.com/drive/folders/192-JKrIKJncHyBxKn5BPhspykHuxe81o?usp=drive_link
+ 2. Abrir carpeta juego
+ 3. Descargar Apk por nombre elguardian de las brumas
+ 4. Aceptar las configuraciones por defecto del movil
+ 5. Instalar el apk
+ 6. pantalla principal juego o llamado pantalla de inicio
 
 
